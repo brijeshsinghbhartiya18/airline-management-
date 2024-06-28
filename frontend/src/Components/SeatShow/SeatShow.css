@@ -1,0 +1,110 @@
+.SeatShow_Parent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.SeatShow_Seats{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.SeatShow_row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.SeatShow_Info , .Seat_Book_Look , .Seat_Not_Book_Look{
+    display: flex;
+}
+
+.SeatShow_Info{
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.Seat_Book_Look , .Seat_Not_Book_Look{
+    gap: 10px;
+}
+.Seat_Book_Look span, .Seat_Not_Book_Look span , .Seat_Selected , .Seat_DeSelect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seat_DeSelect:hover{
+    color: red;
+    cursor: pointer;
+}
+ 
+.SeatShow_Middle{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SeatShow_Back , .SeatShow_Front{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SeatShow_Back span , .SeatShow_Front span{
+    transform: rotate(90deg);
+    font-size: 40px;
+    font-family: cursive;
+}
+
+@media(width < 1000px){
+    .SeatShow_Seats{
+        flex-direction: column;
+    }
+    
+    .SeatShow_Back , .SeatShow_Front{
+        width: 100%;
+    }
+    .SeatShow_Back span , .SeatShow_Front span{
+        transform: rotate(0deg);
+    }
+    
+    .SeatShow_Middle{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .SeatShow_row{
+        transform: rotate(-90deg);
+        margin: -56px;
+    }
+    .SeatShow_index{
+        transform: rotate(90deg);
+    }
+}
+
+@media(width < 750px){
+    .SeatShow_Info{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Sample_Green{
+        position: relative;
+        left: 5px;
+    }
+    .Seat_Book_Look{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .Seat_Not_Book_Look{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}

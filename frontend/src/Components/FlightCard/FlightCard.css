@@ -1,0 +1,194 @@
+.Flight_Card_Parent{
+    border: 1px solid black;
+    width: 80vw;
+    padding: 10px;
+    display: flex;
+    font-family: sans-serif;
+    box-shadow: 0 0 12px #343a40;
+    margin: 20px 0;
+}  
+
+.Flight_Card_From_To{
+    width: 70%;
+    display: flex;
+    font-size: 17px;
+    text-align: center;
+}
+
+.Flight_Card_Time , .Flight_Card_City , .Flight_Card_Airport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+} 
+
+.Flight_Card_Location{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Flight_Card_Pic{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Flight_Card_Single_Line{
+    width: 100%;
+    border: 2px dashed black;
+    height: 0px;
+}
+.Flight_Card_Little_Plane{
+    transform: rotate(42deg);
+}
+
+.Flight_Card_Number{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    }
+
+.Flight_Card_Flight_Num span{
+    width: 100%;
+    font-size: 20px;
+}
+
+.Flight_Card_Flight_Num{
+    display: flex;
+    position: relative;
+    top: 10px;
+    height: 80%;  
+    font-size: 25px;
+}
+.Flight_Card_plane_pic img{
+    width: 30px;
+    position: relative;
+    top: 5px;
+}
+
+
+.Flight_Card_Price{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.Flight_Card_Book{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+    color: #343a40;
+}
+
+.Flight_Card_Book:hover{
+    background-color: #343a40;
+    color: white ;
+}
+
+.Flight_Card_Amount{ 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+}
+
+.Flight_Card_Amount img{
+    width: 45px;
+}
+
+.Flight_Amount_Num{
+    display: flex;
+    width: 30%;
+}
+
+.Flight_Card_Price a{
+    text-decoration: none;
+}
+
+
+@media(width < 1000px){
+    .Flight_Card_Parent{
+        flex-direction: column;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .Flight_Card_From_To{
+        width: 100%;
+        flex-direction: row;
+    }
+    .Flight_Amount_Num{
+        width: 100%;
+    }
+    .Flight_Card_plane_pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Flight_Card_Flight_Num{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Flight_Card_Price{
+        flex-direction: row;
+    }
+    .Flight_Card_Amount img{
+        position: relative;
+        bottom: 2px;
+    }
+    .Flight_Card_Price a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Flight_Card_Book{
+        margin-bottom: -5px;
+    }
+
+    @media(width < 480px){
+        .Flight_Card_From_To{
+            flex-direction: column;
+        }
+        .Flight_Card_Location{
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .Flight_Card_Pic{
+            width: 100%;
+            margin: 20px 0;
+        }
+        .Flight_Amount_Num{
+            flex-direction: column;
+        }
+        .Flight_Card_Number{
+            width: 100%;
+            border-bottom: 1px solid black;
+            position: relative;
+        }
+        .Flight_Card_Flight_Num{
+            top: 0;
+        }
+        .Flight_Card_Price{
+            width: 100%;
+        }
+    }
+}

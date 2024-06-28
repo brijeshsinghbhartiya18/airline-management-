@@ -1,0 +1,40 @@
+.add-flight-page {
+  padding: 20px;
+  margin-left: 5vw;
+}
+
+.flight-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjusted to use fr units for flexibility */
+  gap: 10px;
+}
+
+.flight-form-grid input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .flight-form-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .add-flight-page {
+    margin-left: 0;
+  }
+}

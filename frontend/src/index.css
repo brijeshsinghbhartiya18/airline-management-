@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+ 
+}
+
+ 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}

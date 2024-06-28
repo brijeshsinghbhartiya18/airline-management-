@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+}
+
+.content {
+  margin-left: 25%;
+  width: 75%;
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10vh;
+  }
+}

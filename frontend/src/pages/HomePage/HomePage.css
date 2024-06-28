@@ -1,0 +1,15 @@
+.home-page {
+  padding: 20px 0;
+}
+
+.home-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+} 
+
+@media (max-width: 768px) {
+  .home-page h1 {
+    font-size: 2rem;
+  }
+}
+ 

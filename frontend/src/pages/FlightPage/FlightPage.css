@@ -1,0 +1,92 @@
+.FlightPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.fligh-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.fligh-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.FROMTO {
+    display: flex;
+    align-items: center;
+}
+
+.fligh-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 150px;
+}
+
+.FlightPage_Arrow img {
+    width: 20px;
+    height: 20px;
+}
+
+.flidgt_date {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.FlightPageButton {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.FlightPageButton:hover {
+    background-color: #0056b3;
+}
+
+.Fligh_Show_Page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.FlightCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    .fligh-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .fligh-input {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .flidgt_date {
+        width: 100%;
+    }
+}

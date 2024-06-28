@@ -1,0 +1,44 @@
+.flight-search {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .flight-search input, .flight-search select {
+    width: calc(33.333% - 20px);
+    padding: 10px;
+    margin-right: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .flight-search input:last-child, .flight-search select:last-child {
+    margin-right: 0;
+  }
+  
+  .flight-search button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .flight-search button:hover {
+    background-color: #0056b3;
+  }
+   
+  @media (max-width: 768px) {
+    .flight-search input, .flight-search select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  
+  

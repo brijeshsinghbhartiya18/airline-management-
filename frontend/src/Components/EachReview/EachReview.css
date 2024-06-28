@@ -1,0 +1,26 @@
+.EachReview_Parent{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EachReview_user{
+    width: 30%;
+    justify-content: center;
+}
+.EachReview_words{
+    width: 70%;
+    word-break: break-all;
+}
+
+.EachReview_user , .EachReview_words{
+    display: flex;
+    align-items: center;
+}
+
+@media(width < 700px){
+    .EachReview_words{
+        width: 100%;
+    }
+}

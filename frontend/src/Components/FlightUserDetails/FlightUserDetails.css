@@ -1,0 +1,154 @@
+.Book_Parent{
+    display: flex;
+    width: 99%;
+    height: 500px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.Book_Flight{
+    display: flex;
+    flex-direction: column;
+    width: 70%; 
+    height: 100%;
+}
+
+.Book_Flight_Num , .Book_Flight_Amount{
+    display: flex;
+    justify-content: flex-start;
+    height: 15%;
+    width: 80%;
+    font-size: 60px;
+    position: relative;
+    left: 77px;
+}
+
+.Book_Flight_Detail{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.Book_Depart , .Book_Arrive{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 26px;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+}
+
+.Book_Depart_Time , .Book_Arrive_Time{
+    font-size: 30px;
+}
+
+.Book_Single_Line{
+    width: 100%;
+    border: 2px dashed black;
+    height: 0px;
+    margin: 5px 0;
+}
+
+.Book_Pic{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;   
+}
+
+.Book_Depart_Code , .Book_Arrive_Code{
+    font-size: 100px;
+}
+
+.Book_Flight_Amount span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Book_User{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: #343a40;
+    color: white;
+}
+
+
+.Book_User_details{
+    width: 100%;
+    text-align: center;
+    font-size: 60px; 
+}
+
+.Book_User_Name , .Book_User_Email ,.Book_User_Phone{
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 25px;
+    margin: 25px 0;
+}
+
+
+@media(width < 1000px){
+ .Book_Parent{
+    flex-direction: column;  
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 619px;
+ }
+ .Book_Flight{
+    width: 100%;
+ }
+ .Book_Flight_Num{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+ }
+ .Book_Flight_Amount{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    box-sizing: border-box;
+}
+.Book_Flight_Amount img{
+    width: 60px;
+}
+.Book_User{ 
+    flex-direction: row;
+    width: 100%;
+}
+ 
+}
+
+@media(width < 750px){
+    .Book_User{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Book_Parent{
+        height: 1000px;
+    }
+}
+
+@media(width < 650px){
+    .Book_Flight_Detail{
+        flex-direction: column;
+    }
+    .Book_Depart , .Book_Arrive , .Book_Pic{
+        width: 100%;
+    }
+    .Book_Pic{
+        margin: 30px 0;
+    }
+    .Book_Flight_Num{
+        margin-bottom: 10px;
+    }
+}

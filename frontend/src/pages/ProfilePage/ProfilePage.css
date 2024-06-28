@@ -1,0 +1,121 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.profile-details p {
+  margin: 10px 0;
+}
+
+.profile-details strong {
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+.fetch-flights-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.fetch-flights-button:hover {
+  background-color: #0056b3;
+}
+
+.flights-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.flight-card { 
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.flight-card p {
+  margin: 5px 0;
+}
+
+.flight_cancle{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 100px;
+  background-color: red;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .profile-details {
+    font-size: 16px;
+  }
+
+  .fetch-flights-button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .flight-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-details {
+    font-size: 14px;
+  }
+
+  .fetch-flights-button {
+    padding: 10px;
+  }
+
+  .flight-card {
+    padding: 10px;
+  }
+}
